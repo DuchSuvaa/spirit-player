@@ -1,0 +1,138 @@
+div, p, li, ul {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-size: 62.5%;
+  /* 10px */
+  font-family: monospace; }
+
+.highlight {
+  background-color: #81E8E1; }
+
+#container {
+  max-width: 500px;
+  margin: auto; }
+
+/* Main Screen */
+#screen {
+  width: 100%;
+  height: 135px;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.6em; }
+  #screen #name {
+    width: 80%;
+    height: 70px;
+    background-color: #9BEBFF;
+    line-height: 70px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    overflow: hidden;
+    border: 1px solid #9BEBFF;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    font-size: 1.2em; }
+  #screen #time {
+    width: 20%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #9BEBFF;
+    box-sizing: border-box;
+    border: 1px solid #9BEBFF;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.2em; }
+  #screen #info {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: border-box;
+    background-color: #9BEBFF;
+    color: black;
+    border: 1px solid #9BEBFF;
+    border-radius: 20px;
+    line-height: 25px;
+    margin: 5px auto; }
+  #screen #vol {
+    width: 100%;
+    height: 25px;
+    border: 1px solid #9BEBFF;
+    box-sizing: border-box;
+    border-radius: 20px; }
+    #screen #vol #slider {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      background-color: #9BEBFF; }
+      #screen #vol #slider img {
+        margin-left: 10px; }
+
+#tools {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.button {
+  height: 35px;
+  width: 50px;
+  text-align: center;
+  border: 1px solid #8EFFD7;
+  border-radius: 25%;
+  cursor: pointer;
+  background: linear-gradient(to top, #8EFFD7 0%, #81E8E1 100%);
+  text-align: center;
+  line-height: 35px;
+  font-size: 10px; }
+
+#list {
+  border: 1px solid #8EFFD7;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #8EFFD7;
+  border-radius: 20px; }
+  #list #playlistHeader {
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    font-size: 2em;
+    line-height: 40px;
+    display: flex;
+    flex-flow: row no-wrap; }
+    #list #playlistHeader span {
+      width: 80%;
+      padding-left: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      border-bottom: 1px solid #8EFFD7;
+      height: 40px;
+      line-height: 40px; }
+    #list #playlistHeader .button {
+      height: 100%;
+      width: 10%;
+      background: white;
+      font-size: 30px; }
+    #list #playlistHeader .button:nth-child(3) {
+      margin: 0 5px; }
+  #list #fileList {
+    list-style-type: none;
+    overflow-y: scroll;
+    height: 250px;
+    margin-top: 10px; }
+    #list #fileList li {
+      padding: 0 10px;
+      height: 2em;
+      line-height: 2em;
+      font-size: 1.5em;
+      cursor: pointer; }
+
+/*# sourceMappingURL=player.css.map */

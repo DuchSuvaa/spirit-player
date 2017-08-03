@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Duch Player</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="player.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+<script src="jquery-3.1.1.js"></script>
+<script src="plajer.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+
+	<div id="screen">
+		<div id="name"></div>
+		<div id="time"></div>
+		<div id="info"></div>
+		<div id="vol">
+			<div id="slider"><img src="vol.svg"></div>
+		</div>
+	</div>
+
+	<div id="tools">
+		<div class="button previous leap">PREV</div>
+		<div class="button play">PLAY</div>
+		<div class="button pause">PAUSE</div>
+		<div class="button stop">STOP</div>
+		<div class="button next leap">NXT</div>
+			<input type="file" id="input" style="display:none" multiple onchange="handleFiles(this.files)">
+	</div>
+
+	<div id="list">
+	<div id="playlistHeader">
+		<span>Playlist</span>
+		<div class="button remove">-</div>
+		<div class="button load">+</div>
+	</div>
+		<ul id="fileList">
+
+		</ul>
+	</div>
+
+</div>
+
+</body>
+
+</html>
